@@ -2,14 +2,7 @@ const App = () => {
   return (
     <div>
       Unknown at rule @tailwind css(unknownAtRules)
-
       Stack Overflow
-      https://stackoverflow.com › questions › unknown-at-rul...
-      Use the files.associations setting to tell VS Code to always open .css files in Tailwind CSS mode
-      9 answers
-
-      ·
-
       Top answer:
       You could look at installing the Tailwind CSS IntelliSense VSCode plugin and then: files.associatio ...
       Unknown at rule @tailwind CSS in reactjs - Stack Overflow
