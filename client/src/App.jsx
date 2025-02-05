@@ -1,19 +1,24 @@
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/student/Home"
+import CoursesList from "./pages/student/CoursesList"
+import CourseDetails from "./pages/student/CourseDetails"
+import MyEnrollments from "./pages/student/MyEnrollments"
+import Player from "./pages/student/Player"
+import Loading from "./components/student/Loading"
+
+
 const App = () => {
   return (
     <div>
-      Unknown at rule @tailwind css(unknownAtRules)
-      Stack Overflow
-      Top answer:
-      You could look at installing the Tailwind CSS IntelliSense VSCode plugin and then: files.associatio ...
-      Unknown at rule @tailwind CSS in reactjs - Stack Overflow
-      5 Jan 2022
-      Laravel Unknown at rule @tailwindcss(unknownAtRules)
-      22 Feb 2022
-      How to add a @tailwind CSS rule to CSS checker
-      2 Dec 2017
-      reactjs - Tailwind CSS VSCode Warning - Unknown at rule ...
-      26 Oct 2024
-      More results from stackoverflow.com
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/course-list" element={<CoursesList />} />
+        <Route path="/course-list/:input" element={<CoursesList />} />
+        <Route path="/course/:id" element={<CourseDetails />} />
+        <Route path="/my-enrollments" element={<MyEnrollments />} />
+        <Route path="/player/:courseId" element={<Player />} />
+        <Route path="/loading/:path" element={<Loading />} />
+      </Routes>
     </div>
   )
 }
